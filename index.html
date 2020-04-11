@@ -6,6 +6,7 @@
         <meta name="keywords" content="HTML,CSS,Javascript,jQuery">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Backstreet Boys</title>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="assets/stylesheets/styles.css"/> 
         <style> 
             body {
@@ -22,21 +23,38 @@
               background-size: cover;
             }
             
-           
+         
         </style>
     </head>
     <body>
         <div class="logo">
              <p class="impact">Backstreet boys</p>
         </div>
-        <nav class="topnav" id="top">
+        <nav class="topnav" id="myTopnav">
             <a class="active" href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#disco">Discography</a>
             <a href="#media">Media</a>
             <a href="#shop">Shop</a>
             <a href="#tour">Tour</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+               <i class="fa fa-bars"></i>
+            </a>
         </nav>
+        
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+        </script>
+        
+        
+        
         <header class="container">
             <section class="content">
                 <video class="video-container" autoplay muted controls>
