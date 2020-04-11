@@ -1,34 +1,124 @@
-.full-background-image-container {
-    position: fixed;
-    top: 0;
-    max-width: 100%;
-}
+
 
 .video-container{
-    position: fixed;
-    right: 0;
-    top: 0;
-    min-width: 100%;
-    min-height: 100%;
+    
+    
 }
 
-.video-overlay{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+.logo{
+    float: left  
 }
 
-.video-overlay:before{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 1;
-    background: #000000;
-    opacity: .75;
+.logo p{
+    padding: 0px 16px;
+    font-size: 17px; 
+    text-align: match-parent;
+    color: white
+}
+
+p.impact {
+  font-family: Impact, Charcoal, sans-serif;
+}
+
+/*Add a black background color to the top navigation*/
+.topnav{
+    background-color: transparent;
+    overflow: hidden;
+    float: right;
+}
+
+/*Style the links inside the navigation bar*/
+.topnav a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px; 
+}
+
+/*Change the color of links on hover*/
+.topnav a:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+
+/*Add a color to the active/current link*/
+.topnav a.active{
+    background-color:  rgba(255,255, 255, 0.8);;
+    color: black;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+
+.button {
+  display: inline-block;
+  padding: 6px 10px;
+  color: #FFFFFF;
+  border: 3px solid #FFFFFF;
+  border-radius: 10px;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.button:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+
+.container {
+  display: table;
+  padding-top: 80px;
+  width: 100%;
+}
+
+.content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+
+.navbar{
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 40px;
+  z-index: 9999;
+  position: fixed;
+}
+
+
+
+.navbar a {
+    display: inline-block; 
+    color: white;
+    text-align: center;
+    padding: 10px 20px 10px 10px;
+    text-decoration: none;
+    font-size: 17px; 
+    float: right;
+}
+
+
+@media only screen and (max-width: 340px){
+   html, body, .container {
+    height: auto;
+  }
+    
+      body h1 {
+    font-size: 18px;
+    line-height: 23px;
+  } 
+
 }
