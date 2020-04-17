@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Final Project for HTML5/CSS3 Course">
+        <meta name="keywords" content="HTML,CSS,Javascript,jQuery">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Backstreet Boys-Discography</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/stylesheets/styles.css"/> 
+        <style>
+            body{
+                background-color: gray;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="logo" id="bsblogo">
+             <p class="impact">Backstreet boys</p>
+        </div>
+        <nav class="topnav" id="myTopnav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a class="active"  href="discography.html">Discography</a>
+            <a href="#media">Media</a>
+            <a href="#shop">Shop</a>
+            <a href="#tour">Tour</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+               <i class="fa fa-bars" id="iconshowed"></i>
+            </a>
+        </nav>
+        
+          <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              var y = document.getElementById("bsblogo");
+              var z = document.getElementById("iconshowed");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+                y.style.display="none";
+                z.className = "fa fa-times";
+              } else {
+                x.className = "topnav";
+                y.style.display="block";
+                  z.className = "fa fa-bars";
+              }
+            }
+        </script>
+    </body>
+</html>

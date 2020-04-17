@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Final Project for HTML5/CSS3 Course">
+        <meta name="keywords" content="HTML,CSS,Javascript,jQuery">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Backstreet Boys-About</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/stylesheets/styles.css"/> 
+           <style>
+            body{
+              background-image: url("assets/images/background-grayscale.png") ;
+              /* Background image is centered vertically and horizontally at all times */
+              background-position: center center;
+              /* Background image doesn't tile */
+              background-repeat: no-repeat;
+              /* Background image is fixed in the viewport so that it doesn't move when 
+                 the content's height is greater than the image's height */
+              background-attachment: fixed;
+              /* This is what makes the background image rescale based
+                 on the container's size */
+              background-size: cover;
+            }
+            .group-image{ 
+                max-width: 30%;
+                float:left;
+                padding-right: 10px;
+                min-width: 400px;
+            }
+               
+               
+               
+               @media only screen and (max-width: 630px){
+                   .group-image{ 
+                        min-width: 100%; 
+                        padding-right: 10px;
+                       padding-bottom: 30px;
+                }
+               }
+ 
+              
+        </style>
+    </head>
+    <body>
+         <div class="logo" id="bsblogo">
+             <p class="impact">Backstreet boys</p>
+        </div>
+        <nav class="topnav" id="myTopnav">
+            <a href="index.html">Home</a>
+            <a  class="active" href="about.html">About</a>
+            <a href="discography.html">Discography</a>
+            <a href="#media">Media</a>
+            <a href="#shop">Shop</a>
+            <a href="#tour">Tour</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+               <i class="fa fa-bars" id="iconshowed"></i>
+            </a>
+        </nav>
+        
+      <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              var y = document.getElementById("bsblogo");
+              var z = document.getElementById("iconshowed");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+                y.style.display="none";
+                z.className = "fa fa-times";
+              } else {
+                x.className = "topnav";
+                y.style.display="block";
+                  z.className = "fa fa-bars";
+              }
+            }
+        </script>
+        
+     
+        <div style="height: 50px"></div>
+        <section class="introduction" style="padding-top: 20px"> 
+            <div class="col-xs-12" align="center">
+                <img class="group-image" src="assets/images/group-image.jpg">
+                <div style="padding-left: 50px; padding-right: 50px">
+                   
+                    <h1 style="text-align: left">Our <span>Story</span></h1>
+                    <hr>
+                    <p style="text-align: left">Backstreet Boys (often abbreviated as BSB) is an American vocal group, formed in Orlando, Florida in 1993. The group consists of AJ McLean, Howie Dorough, Nick Carter, Kevin Richardson, and Brian Littrell.</p>
+                 
+                    <p style="text-align: left">The group rose to fame with their debut international album, Backstreet Boys (1996). In the following year, they released their second international album Backstreet's Back (1997) along with their self-titled U.S. debut album, which continued the group's success worldwide. They rose to superstardom with their third studio album Millennium (1999) and its follow-up album, Black & Blue (2000). </p>
+                </div>
+            </div>
+        </section>
+        <section>
+        <div class="col-xs-12 col-md-4" style="padding-left: 50px; padding-right: 50px">
+            <h4>BAND MEMBERS</h4>
+            <ul>
+                <li><b>AJ McLean</b> – vocals (1993–present)</li>
+                <li><b>Howie Dorough</b> – vocals (1993–present)</li>
+                <li><b>Nick Carter</b> – vocals (1993–present)</li>
+                <li><b>Brian Littrell</b> – vocals (1993–present)</li>
+                <li><b>Kevin Richardson</b> – vocals (1993–2006, <br>2008, 2010–present)</li> 
+            </ul>
+        </div>
+            
+               <div class="col-xs-12 col-md-4" style="padding-left: 50px; padding-right: 50px">
+            <h4>BSB Cruises (2011-present)</h4>
+            <ul>
+                <li>Cruise 2011 Nassau, Bahamas</li>
+                <li>Cruise 2013 Anniversary Cruise</li>
+                <li>Cruise 2014 Miami to Half Moon Cay</li>
+                <li>Cruise 2016 European Cruise: Barcelona,<br> Italy and Cannes</li>
+                <li>Cruise 2018 Miami to Grand Turk</li>  
+            </ul>
+        </div>
+        </section>
+       
+        <div class="col-xs-12" style="padding-top: 80px"></div>
+        
+ 
+        <div class="footer">
+            <p>© 2020 Backstreet Boys. All rights reserved.</p>
+         </div>
+     
+        
+    </body>
+</html>

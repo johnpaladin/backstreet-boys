@@ -27,28 +27,34 @@
         </style>
     </head>
     <body>
-        <div class="logo">
+        <div class="logo" id="bsblogo">
              <p class="impact">Backstreet boys</p>
         </div>
         <nav class="topnav" id="myTopnav">
-            <a class="active" href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#disco">Discography</a>
+            <a class="active" href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="discography.html">Discography</a>
             <a href="#media">Media</a>
             <a href="#shop">Shop</a>
             <a href="#tour">Tour</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-               <i class="fa fa-bars"></i>
+               <i class="fa fa-bars" id="iconshowed"></i>
             </a>
         </nav>
         
         <script>
             function myFunction() {
               var x = document.getElementById("myTopnav");
+              var y = document.getElementById("bsblogo");
+              var z = document.getElementById("iconshowed");
               if (x.className === "topnav") {
                 x.className += " responsive";
+                y.style.display="none";
+                z.className = "fa fa-times";
               } else {
                 x.className = "topnav";
+                y.style.display="block";
+                  z.className = "fa fa-bars";
               }
             }
         </script>
