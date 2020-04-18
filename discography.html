@@ -10,11 +10,133 @@
         <link rel="stylesheet" type="text/css" href="assets/stylesheets/styles.css"/> 
         <style>
             body{
-                background-color: gray;
+              background-color: whitesmoke;
+              /* Background image is centered vertically and horizontally at all times */
+              background-position: center center;
+              /* Background image doesn't tile */
+              background-repeat: no-repeat;
+              /* Background image is fixed in the viewport so that it doesn't move when 
+                 the content's height is greater than the image's height */
+              background-attachment: fixed;
+              /* This is what makes the background image rescale based
+                 on the container's size */
+              background-size: cover;
             }
+            
+            
+            * {box-sizing: border-box}
+           
+            .mySlides {display: none}
+            img {vertical-align: middle;}
+
+            /* Slideshow container */
+            .slideshow-container {
+              max-width: 1000px;
+              position: relative;
+              margin: auto; 
+            }
+
+            /* Next & previous buttons */
+            .prev, .next {
+              cursor: pointer;
+              position: absolute;
+              top: 50%;
+              width: auto;
+              padding: 16px;
+              margin-top: -22px;
+              color: white;
+              font-weight: bold;
+              font-size: 18px;
+              transition: 0.6s ease;
+              border-radius: 0 3px 3px 0;
+              user-select: none;
+            }
+
+            /* Position the "next button" to the right */
+            .next {
+              right: 0;
+              border-radius: 3px 0 0 3px;
+            }
+
+            /* On hover, add a black background color with a little bit see-through */
+            .prev:hover, .next:hover {
+              background-color: rgba(0,0,0,0.8);
+            }
+
+            /* Caption text */
+            .text {
+              color: #f2f2f2;
+              font-size: 15px;
+              padding: 8px 12px;
+              position: absolute;
+              bottom: 8px;
+              width: 100%;
+              text-align: center;
+            }
+
+            /* Number text (1/3 etc) */
+            .numbertext {
+              color: #f2f2f2;
+              font-size: 12px;
+              padding: 8px 12px;
+              position: absolute;
+              top: 0;
+            }
+
+            /* The dots/bullets/indicators */
+            .dot {
+              cursor: pointer;
+              height: 15px;
+              width: 15px;
+              margin: 0 2px;
+              background-color: #bbb;
+              border-radius: 50%;
+              display: inline-block;
+              transition: background-color 0.6s ease;
+            }
+
+            .active, .dot:hover {
+              background-color: #717171;
+            }
+
+            /* Fading animation */
+            .fade {
+              -webkit-animation-name: fade;
+              -webkit-animation-duration: 1.5s;
+              animation-name: fade;
+              animation-duration: 1.5s;
+            }
+
+            @-webkit-keyframes fade {
+              from {opacity: .4} 
+              to {opacity: 1}
+            }
+
+            @keyframes fade {
+              from {opacity: .4} 
+              to {opacity: 1}
+            }
+
+             .carousel{ 
+                 min-width: 400px;
+                 padding-left: 100px;
+                 
+                }
+            
+            @media screen and (max-width: 630px){
+                .carousel{
+                    padding-left: 50px;
+                    padding-right: 50px;
+                }
+            }
+           
         </style>
     </head>
     <body>
+         <div class="topper">
+            <p>z</p>
+         </div> 
+        
         <div class="logo" id="bsblogo">
              <p class="impact">Backstreet boys</p>
         </div>
@@ -46,5 +168,128 @@
               }
             }
         </script>
+        
+        <div class="col-xs-12" align="center"><h2 style="color: gray">Discography</h2></div>
+        
+        <section class="carousel col-xs-12 col-md-5"> 
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="assets/images/bsb_cd1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="assets/images/bsb_cd2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="assets/images/bsb_cd3.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a> 
+        </div>
+        
+        <div style="text-align:center; padding-top: 10px" >
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+         
+        </section>
+        <br>
+        
+        <section class="col-xs-12 col-md-5" style="padding-left: 50px; padding-right: 50px">
+            
+            <div class="myAlbums">
+             <h4>BackStreet Boys</h4>
+                <ol>
+                    <li>"We've Got It Goin' On"</li>
+                    <li>"Anywhere for You"</li>
+                    <li>"Get Down (You're the One for Me)</li>
+                    <li>"I'll Never Break Your Heart"</li>
+                    <li>"Quit Playin' Games (with My Heart)"</li>
+                    <li>"Boys Will Be Boys"</li>
+                    <li>"Just to Be Close to You"</li>
+                    <li>"I Wanna Be with You"</li>
+                    <li>"Every Time I Close My Eyes"</li>
+                    <li>"Darlin"</li>
+                </ol>
+            </div>
+            
+               <div class="myAlbums">
+             <h4>Millennium</h4>
+                <ol>
+                    <li>"Larger than Life"</li>
+                    <li>"I Want It That Way"</li>
+                    <li>"Show Me the Meaning of Being Lonely"</li>
+                    <li>"It's Gotta Be You"</li>
+                    <li>"I Need You Tonight"</li>
+                    <li>"Don't Want You Back"</li>
+                    <li>"Don't Wanna Lose You Now"</li>
+                    <li>"The One"</li>
+                    <li>"Back to Your Heart"</li>
+                    <li>"Spanish Eyes"</li>
+                </ol>
+            </div>
+            
+               <div class="myAlbums">
+             <h4>Unbreakable</h4>
+                <ol>
+                    <li>"Intro"</li>
+                    <li>"Everything But Mine"</li>
+                    <li>"Inconsolable"</li>
+                    <li>"Something That I Already Know"</li>
+                    <li>"Helpless When She Smiles"</li>
+                    <li>"Any Other Way"</li>
+                    <li>"One in a Million"</li>
+                    <li>"Panic"</li>
+                    <li>"You Can Let Go"</li>
+                    <li>"Trouble Is"</li>
+                </ol>
+            </div> 
+        </section>
+         
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          var albums = document.getElementsByClassName("myAlbums");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+              albums[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          albums[slideIndex-1].style.display = "block"; 
+        }
+        </script>
+        
+        <div class="col-xs-12" style="padding-top: 80px"></div> 
+        <div class="footer">
+            <p>© 2020 Backstreet Boys. All rights reserved.</p>
+         </div> 
+        
+       
     </body>
 </html>
