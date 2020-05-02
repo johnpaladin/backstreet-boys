@@ -3,6 +3,7 @@
          h3 {
             color: white;
             font-family:fantasy;
+            font-size: 45px;
             }
             
         .button {
@@ -17,6 +18,7 @@
               text-align: center;
               text-transform: uppercase;
               font-family:monospace;
+              font-size: 25px;
             }
 
         .button:hover{
