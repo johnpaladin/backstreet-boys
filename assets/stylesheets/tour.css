@@ -5,6 +5,7 @@ a.btnlink:link, a.btnlink:visited {
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  border-radius: 10px; 
 }
 
 a.btnlink:hover, a.btnlink:active {
