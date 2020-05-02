@@ -1,0 +1,29 @@
+a.btnlink:link, a.btnlink:visited {
+  background-color:  #46B461;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.btnlink:hover, a.btnlink:active {
+  background-color: green;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  text-align: center;
+  padding: 8px;
+}
+
+th{
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
