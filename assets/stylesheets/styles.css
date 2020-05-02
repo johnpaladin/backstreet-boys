@@ -43,13 +43,13 @@ body {font-family: Verdana, sans-serif; margin:0}
 
 /*Change the color of links on hover*/
 .topnav a:hover{
-    background-color: whitesmoke;
+    background-color: #D3D3D3;
     color: black;
 }
 
 /*Add a color to the active/current link*/
 .topnav a.active{
-    background-color:  rgba(255,255, 255, 0.8);;
+    background-color:  rgba(255,255, 255, 1);;
     color: black;
 }
 

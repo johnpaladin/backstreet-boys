@@ -1,0 +1,37 @@
+
+            
+         h3 {
+            color: white;
+            font-family:fantasy;
+            }
+            
+        .button {
+              display: inline-block;
+              padding: 6px 10px;
+              color: #FFFFFF;
+              border: 3px solid #FFFFFF;
+              border-radius: 10px;
+              font-weight: 700;
+              line-height: normal;
+              text-decoration: none;
+              text-align: center;
+              text-transform: uppercase;
+              font-family:monospace;
+            }
+
+        .button:hover{
+            background-color: whitesmoke;
+            color: black;
+        }
+
+        .container {
+          display: table;
+          padding-top: 80px;
+          width: 100%;
+        }
+
+        .content {
+          display: table-cell;
+          vertical-align: middle;
+          text-align: center;
+        }

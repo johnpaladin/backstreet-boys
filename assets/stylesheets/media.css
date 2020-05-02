@@ -1,0 +1,21 @@
+  .flex-container {
+              width: 100%;
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+            } 
+            .flex-container > div { 
+              width: 235px; 
+              margin-left: 7px;
+              margin-bottom: 10px;
+              text-align: center; 
+            }  
+            .media-card{
+              width: 225px;
+              height: 225px;
+              display: block;
+              border-radius: 8px;
+              overflow: hidden;
+              z-index: 0;
+              transition: all .3s ease-in-out; 
+            } 

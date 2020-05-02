@@ -1,0 +1,15 @@
+            .group-image{ 
+                max-width: 30%;
+                float:left;
+                padding-right: 10px;
+                min-width: 400px;
+                padding-left: 40px;
+            }
+            @media only screen and (max-width: 630px){
+                   .group-image{ 
+                       padding-top: 10px;
+                       padding-left: 40px; 
+                       padding-bottom: 30px;
+                       
+                }
+            }
