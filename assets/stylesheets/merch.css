@@ -23,7 +23,7 @@
   background-color: #f1f1f1;
   cursor: pointer;
   font-size: 20px;
-  box-shadow: 0 5px 5px 0 rgba(0,0,0,0.24), 0 5px 5px 0 rgba(0,0,0,0.19);
+  border-radius: 8px; 
 
 }
 
@@ -42,7 +42,12 @@
     width: 100%;
     height: auto;
     display: block; 
-    outline:2px solid #DDD;
+    outline:1px solid #DDD;
+}
+
+.merch-img:hover{
+     box-shadow: 0 5px 5px 0 rgba(0,0,0,0.24), 0 5px 5px 0 rgba(0,0,0,0.19);
+    
 }
  
  
@@ -51,14 +56,15 @@
 padding-top: 50px; padding-left: 30px; padding-right: 30px; width: 90%
 }
 
+
+
 @media screen and (max-width: 630px) {
      
-    
-.filterDiv { width:45%;
-}
+.filterDiv { width:45%;}
 .btn {
       width: 100%;
      font-size: 18px;
+    border-radius: 0;
     }
     
 .filterSection { width: 95%; padding-top: 0px; padding-left: 10px; padding-right: 10px;
