@@ -1,3 +1,8 @@
+/* Thick red border */
+hr.titleline {
+  border: 1px solid gray;
+}
+
 
 video {
   width: 40%; 
