@@ -22,10 +22,10 @@ video {
 }
 
 p.impact {
-  font-family: Impact, Charcoal, sans-serif;
+  font-family: Impact,  sans-serif;
 }
 
-body {font-family: Verdana, sans-serif; margin:0}
+body {font-family:roboto, sans-serif; margin:0}
 
 /*Add a black background color to the top navigation*/
 .topnav{
@@ -42,7 +42,7 @@ body {font-family: Verdana, sans-serif; margin:0}
     padding: 15px 10px;
     text-decoration: none;
     font-size: 17px; 
-    font-family:monospace;
+    font-family: roboto, sans-serif;
     text-transform: uppercase;
 }
 
@@ -71,6 +71,7 @@ body {font-family: Verdana, sans-serif; margin:0}
    background-color: black;
    color: white;
    text-align: center;
+   font-family: roboto, sans-serif;
 }
 
 .topper {
@@ -104,7 +105,7 @@ body {font-family: Verdana, sans-serif; margin:0}
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 630px) {
-  .topnav.responsive {position: relative;
+  .topnav.responsive {position: relative; 
     width: 100%;}
   .topnav.responsive a.icon {
     position: absolute;
