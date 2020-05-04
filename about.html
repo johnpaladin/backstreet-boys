@@ -5,6 +5,7 @@
         <meta name="description" content="Final Project for HTML5/CSS3 Course">
         <meta name="keywords" content="HTML,CSS,Javascript,jQuery">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet"> 
         <title>Backstreet Boys-About</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="assets/stylesheets/styles.css"/> 
@@ -22,15 +23,14 @@
               /* This is what makes the background image rescale based
                  on the container's size */
               background-size: cover;
+             
             } 
         </style>
     </head>
     <body>
-        <div class="topper">
-            <p>z</p>
-         </div> 
+         <div class="topper"></div> 
          <div class="logo" id="bsblogo">
-             <p class="impact">Backstreet boys</p>
+             <p class="impact">Backstreet boys</p> 
         </div>
         <nav class="topnav" id="myTopnav">
             <a href="index.html">Home</a>
@@ -61,34 +61,32 @@
             }
         </script>
         
+        <img class="img-banner" src="assets/images/about-banner.png" alt="about-banner">
      
-        <div style="height: 50px"></div>
-        <section class="introduction" style="padding-top: 20px"> 
-            <div class="col-xs-12" align="center">
-                <img class="group-image" src="assets/images/group-image.jpg">
-                <div style="padding-left: 50px; padding-right: 50px">
-                   
-                    <h1 style="text-align: left">Our <span>Story</span></h1>
-                    <hr>
-                    <p style="text-align: left">Backstreet Boys (often abbreviated as BSB) is an American vocal group, formed in Orlando, Florida in 1993. The group consists of AJ McLean, Howie Dorough, Nick Carter, Kevin Richardson, and Brian Littrell.</p>
-                 
-                    <p style="text-align: left">The group rose to fame with their debut international album, Backstreet Boys (1996). In the following year, they released their second international album Backstreet's Back (1997) along with their self-titled U.S. debut album, which continued the group's success worldwide. They rose to superstardom with their third studio album Millennium (1999) and its follow-up album, Black & Blue (2000). </p>
-                </div>
-            </div>
-        </section>
-        <section>
-        <div class="col-xs-12 col-md-4" style="padding-left: 50px; padding-right: 50px">
+        <div class="wrapper">
+            <article class="img-info">
+                <br>
+                <h2>Hi!</h2>
+                <p>We are Backstreet Boys, who is an American vocal group, formed in Orlando, Florida in 1993. The group consists of AJ McLean, Howie Dorough, Nick Carter, Kevin Richardson, and Brian Littrell.</p>
+                <p>The group rose to fame with their debut international album, Backstreet Boys (1996). In the following year, they released their second international album Backstreet's Back (1997) along with their self-titled U.S. debut album, which continued the group's success worldwide. They rose to superstardom with their third studio album Millennium (1999) and its follow-up album, Black & Blue (2000).</p>
+            </article>
+            <img class="img-group" src="assets/images/group-image.jpg" alt="img-group">
+        </div>
+       
+        <hr class="horizontal-rule">
+        <div class="wrapper">
+        <div class="col-xs-12 col-md-5 group-list">
             <h4>BAND MEMBERS</h4>
             <ul>
-                <li><b>AJ McLean</b> – vocals (1993–present)</li>
-                <li><b>Howie Dorough</b> – vocals (1993–present)</li>
-                <li><b>Nick Carter</b> – vocals (1993–present)</li>
-                <li><b>Brian Littrell</b> – vocals (1993–present)</li>
-                <li><b>Kevin Richardson</b> – vocals (1993–2006, <br>2008, 2010–present)</li> 
+                <li>AJ McLean – vocals</li>
+                <li>Howie Dorough – vocals</li>
+                <li>Nick Carter – vocals</li>
+                <li>Brian Littrell – vocals</li>
+                <li>Kevin Richardson – vocals</li> 
             </ul>
         </div>
             
-        <div class="col-xs-12 col-md-4" style="padding-left: 50px; padding-right: 50px">
+        <div class="col-xs-12 col-md-5 cruise-list">
             <h4>BSB Cruises (2011-present)</h4>
             <ul>
                 <li>Cruise 2011 Nassau, Bahamas</li>
@@ -98,8 +96,11 @@
                 <li>Cruise 2018 Miami to Grand Turk</li>  
             </ul>
         </div>
-        </section>
+        </div>
+        
+        
        
+        
         <div class="col-xs-12" style="padding-top: 80px"></div> 
         <div class="footer">
             <p>© 2020 Backstreet Boys. All rights reserved.</p>

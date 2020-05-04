@@ -15,8 +15,8 @@ video {
 }
 
 .logo p{
-    padding: 0px 16px;
-    font-size: 17px; 
+    padding: 0px 20px;
+    font-size: 16px; 
     text-align: match-parent;
     color: white
 }
@@ -25,7 +25,9 @@ p.impact {
   font-family: Impact,  sans-serif;
 }
 
-body {font-family:roboto, sans-serif; margin:0}
+body {  margin:0;
+     font: 300  18px 'Roboto', sans-serif;
+}
 
 /*Add a black background color to the top navigation*/
 .topnav{
@@ -39,10 +41,10 @@ body {font-family:roboto, sans-serif; margin:0}
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 15px 10px;
+    padding: 17px 12px;
     text-decoration: none;
-    font-size: 17px; 
-    font-family: roboto, sans-serif;
+    font-size: 14px; 
+    font: 500  14px 'Roboto', sans-serif;
     text-transform: uppercase;
 }
 
@@ -71,17 +73,18 @@ body {font-family:roboto, sans-serif; margin:0}
    background-color: black;
    color: white;
    text-align: center;
-   font-family: roboto, sans-serif;
+   font: 300  14px 'Roboto', sans-serif;
 }
 
 .topper {
-   position: absolute;
-   left: 0;
-   top: 0;
-    z-index: -10;
+   position: absolute; 
+   z-index: -10;
+   height: 50px;
    width: 100%;
    background-color: black; 
+   background-image: linear-gradient(gray, black);
    text-align: center;
+   box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.24), 0px 0px 5px 5px rgba(0,0,0,0.19);
 }
 
 
