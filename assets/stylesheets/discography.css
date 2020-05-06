@@ -14,7 +14,9 @@
                 height: 300px;
     }
 
- 
+  .desktop-top-space{
+          display: block;
+      }
 
   @media screen and (max-width: 630px){ 
       .img-banner{
