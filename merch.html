@@ -9,11 +9,15 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="assets/stylesheets/styles.css"/> 
         <link rel="stylesheet" type="text/css" href="./assets/stylesheets/merch.css" /> 
+        <style>
+         body {
+              background-color:gainsboro;
+            }
+        </style>
+        
     </head>
     <body>
-        <div class="topper">
-            <p>z</p>
-         </div> 
+        <div class="topper">  </div> 
         
         <div class="logo" id="bsblogo">
              <p class="impact">Backstreet boys</p>
@@ -46,31 +50,60 @@
               }
             } 
         </script>
-    
-        
-        <div class="col-xs-12" align="center"><h2 style="color: gray">Shop</h2></div>
-        <div class="col-xs-12" style="padding-bottom: 20px">
-             <hr class="titleline" style="width:30%;text-align:center">
-        </div>
+        <img class="img-banner" src="assets/images/merch-banner.png" alt="disco-banner"> 
+        <div class="wrapper">
         <section class="filterSection">
           <!--- control buttons, beware of the name of class active--->
-        <div id="myBtnContainer"  style="padding-bottom: 20px" >
+        <div id="myBtnContainer"  style="padding-bottom: 20px;padding-left: 10px" >
             <button class="btn filteractive" onclick="filterSelection('all')">Show All</button>
             <button class="btn" onclick="filterSelection('cd')">CD</button>
             <button class="btn" onclick="filterSelection('tshirt')">T-Shirt</button>
         </div>
         <!--- filterable elements--->
-        <div class="filteredElementContainer"  >
-            <div class="filterDiv cd"><img src="assets/images/merch/cd1.png" class="merch-img"></div> 
-            <div class="filterDiv tshirt"><img src="assets/images/merch/tshirt2.jpg" class="merch-img"></div>
-            <div class="filterDiv tshirt"><img src="assets/images/merch/tshirt3.jpg" class="merch-img"></div> 
-            <div class="filterDiv cd"><img src="assets/images/merch/cd2.jpg" class="merch-img"></div>
-            <div class="filterDiv cd"><img src="assets/images/merch/cd3.png" class="merch-img"></div>
-            <div class="filterDiv tshirt"><img src="assets/images/merch/tshirt4.jpg" class="merch-img"></div>
+        <div class="filteredElementContainer"  >  
+       
+            <div class="filterDiv tshirt container"><img src="assets/images/merch/tshirt_2.png" class="merch-img">
+                <div class="middle">
+                <a class="text" href="https://www.amazon.com/Backstreet-Vintage-Destroyed-Slim-Fit-T-Shirt/dp/B07K4SLQCZ/ref=sr_1_1?crid=36T6TQOWSFGMZ&dchild=1&keywords=backstreet%2Bboys%2Bshirt&qid=1588882380&sprefix=backstreet%2Caps%2C215&sr=8-1&th=1">BUY</a>
+                </div>
+            </div>
+            <div class="filterDiv tshirt container">
+                <img src="assets/images/merch/tshirt_3.png" class="merch-img">
+                <div class="middle">
+                <a class="text" href="https://www.amazon.com/Backstreet-Vintage-Destroyed-Slim-Fit-T-Shirt/dp/B07K4SLQCZ/ref=sr_1_1?crid=36T6TQOWSFGMZ&dchild=1&keywords=backstreet%2Bboys%2Bshirt&qid=1588882380&sprefix=backstreet%2Caps%2C215&sr=8-1&th=1">BUY</a>
+                </div>
+            </div> 
+            <div class="filterDiv tshirt container">
+                <img src="assets/images/merch/tshirt_4.png" class="merch-img">
+                <div class="middle">
+                <a class="text" href="https://www.amazon.com/Backstreet-Vintage-Destroyed-Slim-Fit-T-Shirt/dp/B07K4SLQCZ/ref=sr_1_1?crid=36T6TQOWSFGMZ&dchild=1&keywords=backstreet%2Bboys%2Bshirt&qid=1588882380&sprefix=backstreet%2Caps%2C215&sr=8-1&th=1">BUY</a>
+                </div>
+            </div>
+            <div class="filterDiv cd container">
+                <img src="assets/images/merch/cd_2.png" class="merch-img">
+                <div class="middle">
+                <a class="text" href="https://www.amazon.com/Triple-Feature-Backstreet-Boys/dp/B009AVFRTO/ref=sr_1_1?dchild=1&keywords=backstreet%2Bboys%2BCD&qid=1588882465&sr=8-1">BUY</a>
+                </div>
+            </div>
+            <div class="filterDiv cd container">
+                <img src="assets/images/merch/cd_3.png" class="merch-img">
+                <div class="middle">
+                <a class="text" href="https://www.amazon.com/Triple-Feature-Backstreet-Boys/dp/B009AVFRTO/ref=sr_1_1?dchild=1&keywords=backstreet%2Bboys%2BCD&qid=1588882465&sr=8-1">BUY</a>
+                </div>
+            </div>
+            <div class="filterDiv cd container">
+                <img src="assets/images/merch/cd_1.png" class="merch-img">
+                <div class="middle">
+                <a class="text" href="https://www.amazon.com/Triple-Feature-Backstreet-Boys/dp/B009AVFRTO/ref=sr_1_1?dchild=1&keywords=backstreet%2Bboys%2BCD&qid=1588882465&sr=8-1">BUY</a>
+                </div>
+            </div> 
+ 
         </div>
         </section>
       
-        
+        </div>
+    
+               
         <script>
             /*use developer tool > console to debug*/
             filterSelection("all")  
@@ -126,8 +159,6 @@
             }
             
         </script>
-      
-        
         <div class="col-xs-12" style="padding-top: 80px"></div> 
         <div class="footer">
             <p>© 2020 Backstreet Boys. All rights reserved.</p>
