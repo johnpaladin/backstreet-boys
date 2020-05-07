@@ -48,8 +48,7 @@
     display: block; 
     box-shadow: 0 5px 5px 0 rgba(0,0,0,0.24), 0 5px 5px 0 rgba(0,0,0,0.19);
     opacity: 1;
-    transition: .5s ease;
-    backface-visibility: hidden;
+    transition: .5s ease; 
 }
 
 .middle{
@@ -90,17 +89,22 @@ padding-top: 50px; padding-left: 30px; padding-right: 30px; width: 90%
  
 @media screen and (max-width: 630px) {
      
-        .wrapper{
+ .wrapper{
     width: 100%;
-}
+ }
   
-.filterDiv { width:47%; padding-left: 2px}
+.filterDiv {
+    width:47%; padding-left: 2px
+    }
 .btn {
-      width: 32%;
-     font-size: 16px;
+    width: 32%;
+    font-size: 16px;
     border-radius: 0;
     padding: 12px 10px;
-    }
+}
     
-.filterSection { width: 100%; padding-top: 0px; padding-left: 0px; padding-right: 0px;
-} }
+.filterSection {
+    width: 100%; padding-top: 0px; padding-left: 0px; padding-right: 0px;
+} 
+
+}
